@@ -9,8 +9,7 @@ from utils_common import dlblue, dlorange, dldarkred, dlmagenta, dlpurple, dlcol
 
 plt.style.use('./ml.mplstyle')
 n_bin = 5
-dlcm = LinearSegmentedColormap.from_list(
-        'dl_map', dlcolors, N=n_bin)
+dlcm = LinearSegmentedColormap.from_list('dl_map', dlcolors, N=n_bin)
 
 ##########################################################
 # Plotting Routines
@@ -243,8 +242,8 @@ def inbounds(a,b,xlim,ylim):
     return False
 
 def plt_contour_wgrad(x, y, hist, ax, w_range=[-100, 500, 5], b_range=[-500, 500, 5],
-                contours = [0.1,50,1000,5000,10000,25000,50000],
-                      resolution=5, w_final=200, b_final=100,step=10 ):
+                      contours = [0.1,50,1000,5000,10000,25000,50000],
+                      resolution=5, w_final=200, b_final=100,step=10):
     b0,w0 = np.meshgrid(np.arange(*b_range),np.arange(*w_range))
     z=np.zeros_like(b0)
     for i in range(w0.shape[0]):
@@ -252,7 +251,7 @@ def plt_contour_wgrad(x, y, hist, ax, w_range=[-100, 500, 5], b_range=[-500, 500
             z[i][j] = compute_cost(x, y, w0[i][j], b0[i][j] )
 
     CS = ax.contour(w0, b0, z, contours, linewidths=2,
-                   colors=[dlblue, dlorange, dldarkred, dlmagenta, dlpurple])
+                    colors=[dlblue, dlorange, dldarkred, dlmagenta, dlpurple])
     ax.clabel(CS, inline=1, fmt='%1.0f', fontsize=10)
     ax.set_xlabel("w");  ax.set_ylabel("b")
     ax.set_title('Contour plot of cost J(w,b), vs b,w with path of gradient descent')
