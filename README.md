@@ -41,7 +41,15 @@ _Folder_:
 _Python_:
 
 - model_representation.py: univariate linear regression example
+- vectorization.py: applying vectorization to loops and linear algebra operations with Numpy
 
 _Jupyter Notebook_:
 
 - cost_function.ipynb: python notebook for cost function visualization used in our univariate linear regression model
+- gradient_descent.ipynb: python notebook for gradient descent implementation and visualization for the optimal w,b parameters of the univariate
+- multiple_linear_regression.ipynb: python notebook for multiple univariate linear regression model
+- feature_scaling_and_learning_rt.ipynb
+
+_Useful links_:
+
+- Least Squares (error/cost function) and Normal Equations vs Gradient Descent: https://math.mit.edu/icg/resources/teaching/18.085-spring2015/LeastSquares.pdf

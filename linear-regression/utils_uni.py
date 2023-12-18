@@ -343,9 +343,9 @@ def add_line(dj_dx, x1, y1, d, ax):
     xoff = 30 if x1 == 200 else 10
     ax.annotate(r"$\frac{\partial J}{\partial w}$ =%d" % dj_dx, fontsize=14,
                 xy=(x1, y1), xycoords='data',
-            xytext=(xoff, 10), textcoords='offset points',
-            arrowprops=dict(arrowstyle="->"),
-            horizontalalignment='left', verticalalignment='top')
+                xytext=(xoff, 10), textcoords='offset points',
+                arrowprops=dict(arrowstyle="->"),
+                horizontalalignment='left', verticalalignment='top')
 
 def plt_gradients(x_train,y_train, f_compute_cost, f_compute_gradient):
     #===============
