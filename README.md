@@ -48,7 +48,8 @@ _Jupyter Notebook_:
 - cost_function.ipynb: python notebook for cost function visualization used in our univariate linear regression model
 - gradient_descent.ipynb: python notebook for gradient descent implementation and visualization for the optimal w,b parameters of the univariate
 - multiple_linear_regression.ipynb: python notebook for multiple univariate linear regression model
-- feature_scaling_and_learning_rt.ipynb
+- feature_scaling_and_learning_rt.ipynb: feature scaling with various methods and choosing the correct learning rate for the model
+- feature_eng_and_polynomial_regression.ipynb: adding new features based on the existing features (feature engineering) and modeling non-linear functions
 
 _Useful links_:
 
