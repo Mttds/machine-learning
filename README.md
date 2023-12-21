@@ -32,7 +32,9 @@ Run `./run_jupyterlab.sh` to start the Jupyter lab server.
 
 ## Content
 
-### Linear Regression
+### Supervised Learning
+
+#### Linear Regression
 
 _Folder_:
 
@@ -54,3 +56,13 @@ _Jupyter Notebook_:
 _Useful links_:
 
 - Least Squares (error/cost function) and Normal Equations vs Gradient Descent: https://math.mit.edu/icg/resources/teaching/18.085-spring2015/LeastSquares.pdf
+
+#### Classification
+
+_Folder_:
+
+- classification
+
+_Jupyter Notebook_:
+
+- classification.ipynb: classification with linear regression attempt and with logistic regression
