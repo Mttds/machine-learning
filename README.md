@@ -1,4 +1,4 @@
-# machine learning
+# <span style="color:teal;font-weight:bold">machine learning</span>
 
 ## Requirements
 
@@ -16,6 +16,7 @@ pip install matplotlib
 pip install jupyterlab
 pip install ipywidgets
 pip install ipympl
+pip install scikit-learn
 ```
 
 ## Environment
@@ -34,7 +35,7 @@ Run `./run_jupyterlab.sh` to start the Jupyter lab server.
 
 ### Supervised Learning
 
-#### Linear Regression
+#### <span style="color:teal;font-weight:bold">Linear Regression</span><hr/>
 
 _Folder_:
 
@@ -57,12 +58,25 @@ _Useful links_:
 
 - Least Squares (error/cost function) and Normal Equations vs Gradient Descent: https://math.mit.edu/icg/resources/teaching/18.085-spring2015/LeastSquares.pdf
 
-#### Classification
+#### <span style="color:teal;font-weight:bold">Classification</span><hr/>
 
 _Folder_:
 
 - classification
 
+_Python_:
+
+- logistic_regression.py: implementation of two prediction models using logistic regression (classification)
+
 _Jupyter Notebook_:
 
 - classification.ipynb: classification with linear regression attempt and with logistic regression
+- cost_function.ipynb: cost function for logistic regression and logistic loss
+- gradient_descent.ipynb: gradient descent for the logistic cost function
+- regularization.ipynb: regularization technique to combat under and over fitting
+
+Correct for over/under fitting:
+
+- Collect more training data for the model
+- Regularize weights for features
+- Add/remove features (feature engineering)
