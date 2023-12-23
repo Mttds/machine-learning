@@ -45,6 +45,11 @@ _Python_:
 
 - model_representation.py: univariate linear regression example
 - vectorization.py: applying vectorization to loops and linear algebra operations with Numpy
+- linear_regression.py: example of linear regression model
+
+_C_:
+
+- gradient_descent.c: gradient descent implementation for univariate linear regression (one x1 feature) using OpenMP. The library is compiled as a shared object (.so) and called from Python in linear_regression.py
 
 _Jupyter Notebook_:
 
@@ -80,3 +85,13 @@ Correct for over/under fitting:
 - Collect more training data for the model
 - Regularize weights for features
 - Add/remove features (feature engineering)
+
+#### <span style="color:teal;font-weight:bold">Neural Networks</span><hr/>
+
+_Folder_:
+
+- neural-net
+
+_Python_:
+
+_Jupyter Notebook_:
