@@ -17,6 +17,7 @@ pip install jupyterlab
 pip install ipywidgets
 pip install ipympl
 pip install scikit-learn
+pip install tensorflow
 ```
 
 ## Environment
@@ -46,6 +47,7 @@ _Python_:
 - model_representation.py: univariate linear regression example
 - vectorization.py: applying vectorization to loops and linear algebra operations with Numpy
 - linear_regression.py: example of linear regression model
+- locally_weighted_linear_regression.py: locally weighted version of linear regression for sample data that does not fit well a linear regression using both batch gradient descent and stochastic gradient descent to find the optimal w (theta) parameter.
 
 _C_:
 
@@ -95,3 +97,5 @@ _Folder_:
 _Python_:
 
 _Jupyter Notebook_:
+
+- forward_prop_nn_tensorflow.ipynb: forward propagation simple neural network using TensorFlow

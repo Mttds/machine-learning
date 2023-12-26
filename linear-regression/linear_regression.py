@@ -46,8 +46,7 @@ def compute_cost(x, y, w, b):
     """
     # number of training examples
     m = x.shape[0] 
-    
-    # You need to return this variable correctly
+
     total_cost = 0
 
     for i in range(m):
@@ -72,8 +71,7 @@ def compute_gradient(x, y, w, b):
 
     # Number of training examples
     m = x.shape[0]
-    
-    # You need to return the following variables correctly
+
     dj_dw = 0
     dj_db = 0
 
@@ -179,7 +177,7 @@ def restaurants_profit_model():
     initial_b = 0.
 
     # gradient descent settings
-    iterations = 150000
+    iterations = 950000
     alpha = 0.01
 
     msg(f"Gradient descent start [Python] {time.time()}")

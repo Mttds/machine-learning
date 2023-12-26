@@ -133,6 +133,40 @@ def gradient_descent(X, y, w_in, b_in, cost_function, gradient_function, alpha, 
         
     return w_in, b_in, J_history, w_history
 
+#def compute_hessian(X, w, b, lambda_):
+#    m, n = X.shape
+#    hessian = np.zeros((n, n))
+#
+#    for i in range(m):
+#        z_wb = np.dot(X[i], w) + b
+#        f_wb = sigmoid(z_wb)
+#        x_i = X[i].reshape(-1, 1)
+#        hessian += f_wb * (1 - f_wb) * np.dot(x_i, x_i.T)
+#
+#    # add regularization term to the Hessian
+#    reg_term = lambda_ * np.eye(n)  # Identity matrix scaled by lambda
+#    hessian += reg_term
+#
+#    return hessian / m
+
+
+#def newton(X, y, w_in, b_in, cost_function, gradient_function, lambda_, num_iters):
+#    alpha = 1.0 # fixed step size for Newton's method
+#    m = len(X)
+#
+#    J_history = []
+#    w_history = []
+#
+#    for i in range(num_iters):
+#        dj_db, dj_dw = gradient_function(X, y, w_in, b_in, lambda_, False)
+#        hessian = compute_hessian(X, w_in, b_in, lambda_)
+#
+#        # update weights and bias
+#        w_in -= alpha * np.linalg.inv(hessian) @ dj_dw
+#        b_in -= alpha * dj_db
+#
+#    return w_in, b_in
+
 def predict(X, w, b): 
     """
     Predict whether the label is 0 or 1 using learned logistic
@@ -290,6 +324,22 @@ def university_admission_model():
     p = predict(X_train, w,b)
     msg('Train Accuracy: %f'%(np.mean(p == y_train) * 100))
 
+    #iterations_newton = 100
+    #w, b = newton(X_train, y_train, initial_w, initial_b, compute_cost, compute_gradient, 0, iterations_newton)
+
+    ## plotting classification with learned w[] and b using newton's method
+    #plot_decision_boundary(w, b, X_train, y_train)
+    ## Set the y-axis label
+    #plt.ylabel('Exam 2 score') 
+    ## Set the x-axis label
+    #plt.xlabel('Exam 1 score') 
+    #plt.legend(loc="upper right")
+    #plt.show()
+
+    ## Compute accuracy on our training set
+    #p = predict(X_train, w,b)
+    #msg('Train Accuracy: %f'%(np.mean(p == y_train) * 100))
+
 
 def microprocessor_defect_model():
     print("*********** Microprocessors defect model ***********")
@@ -343,8 +393,6 @@ def microprocessor_defect_model():
     np.random.seed(1)
     initial_w = np.random.rand(X_mapped.shape[1])-0.5
     initial_b = 1.
-
-    # Set regularization parameter lambda_ (you can try varying this)
     lambda_ = 0.01    
 
     # Some gradient descent settings
