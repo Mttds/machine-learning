@@ -18,6 +18,7 @@ pip install ipywidgets
 pip install ipympl
 pip install scikit-learn
 pip install tensorflow
+conda install -c anaconda sympy
 ```
 
 ## Environment
@@ -96,6 +97,12 @@ _Folder_:
 
 _Python_:
 
+- digit_classification_nn.py: classifies digit 0 or digit 1 using a neural network (both with TensorFlow and manual implementation [using tf trained weights and biases])
+
+- multiclass_digit_classification_nn.py: classifies digits 0 through 9 using a neural network with softmax.
+
 _Jupyter Notebook_:
 
 - forward_prop_nn_tensorflow.ipynb: forward propagation simple neural network using TensorFlow
+- forward_prop_nn_numpy.ipynb: forward propagation simple neural network without using TensorFlow
+- multiclass_nn_softmax.ipynb: softmax function for the output layer of a neural net for multiclass classification problems

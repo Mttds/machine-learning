@@ -95,6 +95,8 @@ def nn_model_tf(X):
             tf.keras.Input(shape=(X.shape[1],)), # specify input size (400 element vector, i.e 400 x features)
             Dense(units=25, activation='sigmoid'),
             Dense(units=15, activation='sigmoid'),
+            #Dense(units=25, activation='relu'),
+            #Dense(units=15, activation='relu'),
             Dense(units=1 , activation='sigmoid')
         ], name = "my_model" 
     )
