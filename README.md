@@ -19,6 +19,8 @@ pip install ipympl
 pip install scikit-learn
 pip install tensorflow
 conda install -c anaconda sympy
+pip install pandas
+pip install xgboost
 ```
 
 ## Environment
@@ -106,3 +108,30 @@ _Jupyter Notebook_:
 - forward_prop_nn_tensorflow.ipynb: forward propagation simple neural network using TensorFlow
 - forward_prop_nn_numpy.ipynb: forward propagation simple neural network without using TensorFlow
 - multiclass_nn_softmax.ipynb: softmax function for the output layer of a neural net for multiclass classification problems
+
+To fix a high bias problem:
+
+- adding polynomial features
+- getting additional features
+- decreasing the regularization parameter
+
+To fix a high variance problem:
+
+- increasing the regularization parameter
+- smaller sets of features
+- more training examples
+
+#### <span style="color:teal;font-weight:bold">Decision Trees</span><hr/>
+
+_Folder_:
+
+- decision-tree
+
+_Python_:
+
+- decision_tree.py: implementation of a decision tree algorithm with no libraries
+
+_Jupyter Notebook_:
+
+- decision_trees.ipynb: example decision tree (and one-hot encoding)
+- ensembles.ipynb: XGBoost, Random Forest examples (bagging, boosting decision trees)
