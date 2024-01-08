@@ -18,7 +18,7 @@ def load_data():
     Generate sample data
     """
     X_train = np.array([[1,1,1],[1,0,1],[1,0,0],[1,0,0],[1,1,1],[0,1,1],[0,0,0],[1,0,1],[0,1,0],[1,0,0]])
-    y_train = np.array([1,1,0,0,1,0,0,1,1,0]) # 1 for ediple, 0 for poisonous
+    y_train = np.array([1,1,0,0,1,0,0,1,1,0]) # 1 for edible, 0 for poisonous
 
     return X_train, y_train
 

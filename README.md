@@ -135,3 +135,27 @@ _Jupyter Notebook_:
 
 - decision_trees.ipynb: example decision tree (and one-hot encoding)
 - ensembles.ipynb: XGBoost, Random Forest examples (bagging, boosting decision trees)
+
+### Unsupervised Learning
+
+#### <span style="color:teal;font-weight:bold">K-means</span><hr/>
+
+_Folder_:
+
+- kmeans
+
+_Jupyter Notebook_:
+
+- image_compression.ipynb: example of k-means application
+
+#### <span style="color:teal;font-weight:bold">Anomaly Detection</span><hr/>
+
+_Folder_:
+
+- anomaly-detection
+
+_Jupyter Notebook_:
+
+- anomaly_detection.ipynb: example of anomlay detection application
+
+### Reinforcement Learning
