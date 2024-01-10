@@ -1,4 +1,4 @@
-#<span style="color:teal;font-weight:bold">machine learning</span>
+# <span style="color:teal;font-weight:bold">machine learning</span>
 
 ## Requirements
 
@@ -45,7 +45,7 @@ Run `./run_jupyterlab.sh` to start the Jupyter lab server.
 
 ### Supervised Learning
 
-####<span style="color:teal;font-weight:bold">Linear Regression</span>
+#### <span style="color:teal;font-weight:bold">Linear Regression</span>
 
 <hr/>
 
@@ -76,7 +76,7 @@ _Useful links_:
 
 - Least Squares (error/cost function) and Normal Equations vs Gradient Descent: https://math.mit.edu/icg/resources/teaching/18.085-spring2015/LeastSquares.pdf
 
-####<span style="color:teal;font-weight:bold">Classification</span>
+#### <span style="color:teal;font-weight:bold">Classification</span>
 
 <hr/>
 
@@ -101,7 +101,7 @@ Correct for over/under fitting:
 - Regularize weights for features
 - Add/remove features (feature engineering)
 
-####<span style="color:teal;font-weight:bold">Neural Networks</span>
+#### <span style="color:teal;font-weight:bold">Neural Networks</span>
 
 <hr/>
 
@@ -133,7 +133,7 @@ To fix a high variance problem:
 - smaller sets of features
 - more training examples
 
-####<span style="color:teal;font-weight:bold">Decision Trees</span>
+#### <span style="color:teal;font-weight:bold">Decision Trees</span>
 
 <hr/>
 
@@ -152,7 +152,7 @@ _Jupyter Notebook_:
 
 ### Unsupervised Learning
 
-####<span style="color:teal;font-weight:bold">K-means</span>
+#### <span style="color:teal;font-weight:bold">K-means</span>
 
 <hr/>
 
@@ -164,7 +164,7 @@ _Jupyter Notebook_:
 
 - image_compression.ipynb: example of k-means application
 
-####<span style="color:teal;font-weight:bold">Anomaly Detection</span>
+#### <span style="color:teal;font-weight:bold">Anomaly Detection</span>
 
 <hr/>
 
@@ -178,7 +178,7 @@ _Jupyter Notebook_:
 
 ### Recommender systems
 
-####<span style="color:teal;font-weight:bold">Collaborative Filtering</span>
+#### <span style="color:teal;font-weight:bold">Collaborative Filtering</span>
 
 <hr/>
 
@@ -190,7 +190,7 @@ _Python_:
 
 - collaborative_filtering.py: implementation of a movie recommender using collaborative filtering
 
-####<span style="color:teal;font-weight:bold">Content-based Filtering</span>
+#### <span style="color:teal;font-weight:bold">Content-based Filtering</span>
 
 <hr/>
 
