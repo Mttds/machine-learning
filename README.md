@@ -21,6 +21,7 @@ pip install tensorflow
 conda install -c anaconda sympy
 pip install pandas
 pip install xgboost
+pip install tabulate
 ```
 
 ## Environment
@@ -61,7 +62,7 @@ _Jupyter Notebook_:
 - cost_function.ipynb: python notebook for cost function visualization used in our univariate linear regression model
 - gradient_descent.ipynb: python notebook for gradient descent implementation and visualization for the optimal w,b parameters of the univariate
 - multiple_linear_regression.ipynb: python notebook for multiple univariate linear regression model
-- feature_scaling_and_learning_rt.ipynb: feature scaling with various methods and choosing the correct learning rate for the model
+- feature_scaling_normalization_learning_rt.ipynb: feature scaling with various methods and choosing the correct learning rate for the model + normalization techniques
 - feature_eng_and_polynomial_regression.ipynb: adding new features based on the existing features (feature engineering) and modeling non-linear functions
 
 _Useful links_:
@@ -157,5 +158,29 @@ _Folder_:
 _Jupyter Notebook_:
 
 - anomaly_detection.ipynb: example of anomlay detection application
+
+### Recommender systems
+
+#### <span style="color:teal;font-weight:bold">Collaborative Filtering</span><hr/>
+
+_Folder_:
+
+- collaborative-filtering
+
+_Python_:
+
+- collaborative_filtering.py: implementation of a movie recommender using collaborative filtering
+
+#### <span style="color:teal;font-weight:bold">Content-based Filtering</span><hr/>
+
+_Folder_:
+
+- content-based-filtering
+
+_Python_:
+
+- content_based_filtering.py: implementation of a movie recommender using content-based filtering
+
+### Principal Component Analysis (PCA)
 
 ### Reinforcement Learning
