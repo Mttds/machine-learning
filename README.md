@@ -1,8 +1,8 @@
-# <span style="color:teal;font-weight:bold">machine learning</span>
+#<span style="color:teal;font-weight:bold">machine learning</span>
 
 ## Requirements
 
-conda: 4.10.3 (https://docs.conda.io/projects/miniconda/en/latest/)
+conda: (https://docs.conda.io/projects/miniconda/en/latest/)
 
 Create env with: `conda create -n machine_learning python=3.10`
 
@@ -22,6 +22,11 @@ conda install -c anaconda sympy
 pip install pandas
 pip install xgboost
 pip install tabulate
+pip install gym
+pip install imageio
+pip install pyvirtualdisplay # apt update && apt install xvfb needed on Linux
+pip install swig # required by box2d-py
+pip install gym[box2d]
 ```
 
 ## Environment
@@ -40,7 +45,9 @@ Run `./run_jupyterlab.sh` to start the Jupyter lab server.
 
 ### Supervised Learning
 
-#### <span style="color:teal;font-weight:bold">Linear Regression</span><hr/>
+####<span style="color:teal;font-weight:bold">Linear Regression</span>
+
+<hr/>
 
 _Folder_:
 
@@ -69,7 +76,9 @@ _Useful links_:
 
 - Least Squares (error/cost function) and Normal Equations vs Gradient Descent: https://math.mit.edu/icg/resources/teaching/18.085-spring2015/LeastSquares.pdf
 
-#### <span style="color:teal;font-weight:bold">Classification</span><hr/>
+####<span style="color:teal;font-weight:bold">Classification</span>
+
+<hr/>
 
 _Folder_:
 
@@ -92,7 +101,9 @@ Correct for over/under fitting:
 - Regularize weights for features
 - Add/remove features (feature engineering)
 
-#### <span style="color:teal;font-weight:bold">Neural Networks</span><hr/>
+####<span style="color:teal;font-weight:bold">Neural Networks</span>
+
+<hr/>
 
 _Folder_:
 
@@ -122,7 +133,9 @@ To fix a high variance problem:
 - smaller sets of features
 - more training examples
 
-#### <span style="color:teal;font-weight:bold">Decision Trees</span><hr/>
+####<span style="color:teal;font-weight:bold">Decision Trees</span>
+
+<hr/>
 
 _Folder_:
 
@@ -139,7 +152,9 @@ _Jupyter Notebook_:
 
 ### Unsupervised Learning
 
-#### <span style="color:teal;font-weight:bold">K-means</span><hr/>
+####<span style="color:teal;font-weight:bold">K-means</span>
+
+<hr/>
 
 _Folder_:
 
@@ -149,7 +164,9 @@ _Jupyter Notebook_:
 
 - image_compression.ipynb: example of k-means application
 
-#### <span style="color:teal;font-weight:bold">Anomaly Detection</span><hr/>
+####<span style="color:teal;font-weight:bold">Anomaly Detection</span>
+
+<hr/>
 
 _Folder_:
 
@@ -161,7 +178,9 @@ _Jupyter Notebook_:
 
 ### Recommender systems
 
-#### <span style="color:teal;font-weight:bold">Collaborative Filtering</span><hr/>
+####<span style="color:teal;font-weight:bold">Collaborative Filtering</span>
+
+<hr/>
 
 _Folder_:
 
@@ -171,7 +190,9 @@ _Python_:
 
 - collaborative_filtering.py: implementation of a movie recommender using collaborative filtering
 
-#### <span style="color:teal;font-weight:bold">Content-based Filtering</span><hr/>
+####<span style="color:teal;font-weight:bold">Content-based Filtering</span>
+
+<hr/>
 
 _Folder_:
 
@@ -184,3 +205,11 @@ _Python_:
 ### Principal Component Analysis (PCA)
 
 ### Reinforcement Learning
+
+_Folder_:
+
+- reinforcement-learning
+
+_Jupyter Notebook_:
+
+- lunar_lander.html: lunar lander agent environment using Deep Q-Learning.
