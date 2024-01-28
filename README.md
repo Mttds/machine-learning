@@ -202,7 +202,37 @@ _Python_:
 
 - content_based_filtering.py: implementation of a movie recommender using content-based filtering
 
-### Principal Component Analysis (PCA)
+#### <span style="color:teal;font-weight:bold"> Principal Component Analysis (PCA)</span>
+
+<hr/>
+
+Suppose we have a collection of m points {x(1), . . . , x(m)} in R^n
+
+and we want to apply lossy compression to these points. Lossy compression means storing the points in a way that requires less memory but may lose some precision (i.e. reducing dimensions). We want to lose as little precision as possible.
+
+One way we can encode these points is to represent a lower-dimensional version of them. For each point x(i) ∈ R^n we will ﬁnd a corresponding code vector c(i) ∈ R^l.
+
+If l is smaller than n, storing the code points will take less memory than storing the original data. We will want to ﬁnd some encoding function that produces the code for an input, f(x) = c, and a decoding function that produces the reconstructed input given its code, x ≈ g(f (x)).
+
+Using scikit-learn:
+
+```python
+# optional preprocessing: perform feature scaling
+# fit function in scikit-learn automatically performs mean normalization
+# explore how much variance is retained by each principal component
+# transform (project) the data into the new axes (principal components)
+import sklearn
+X = np.array([[1,1], [2,1], [3,2],
+              [-1,-1], [-2,-1], [-3,-2]])
+
+# reduce from x1,x2 to z
+pca_1 = PCA(n_components=1)
+pca_1.fit(X)
+pca_1.explained_variance_ratio_ # 0.992 captures 99.2% of the variance of the original dataset
+X_trans_1 = pca_1.transform(X) # generate an array with 6 values, i.e. (1,1) mapped to 1.38340578
+X_reduced_1 = pca.inverse_transform(X_trans_1) # approximate original dataset by "reconstructing"
+
+```
 
 ### Reinforcement Learning
 
