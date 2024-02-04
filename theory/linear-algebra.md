@@ -204,3 +204,111 @@ We can find the Inverse Matrix by solving the system of equations where the resu
 ![Identity and Inverse Matrix](./img/matrix-inverse-3.png)
 
 Non-singular matrices ALWAYS have an Inverse Matrix. Singular matrices do NOT (Non-invertible).
+
+<hr/>
+
+### More on determinants
+
+<hr/>
+
+`Singular Transformation` is when the change of basis does not span the entire R^N in the new projection.
+For example:
+
+```
+Linear transformation (matrix):
+|1 1|
+|2 2|
+
+Take the vector operation vector multiplied by matrix A to get the new vector: `bA = b'`
+(0,0) --> (0,0)
+(1,0) --> (1,2)
+(0,1) --> (1,2)
+(1,1) --> (2,4)
+
+This gives us a degenerate parallelogram, a line going through the origin and with slope = 2 (i.e. y/x).
+```
+
+This is due to the fact that the matrix used for the linear transformation is singular (row 2 is a linear combination of row 1).
+With a matrix that is singular and with infinitely many solutions (i.e. matrix [(0,0),(0,0)]) the result of the linear transformation would be a point instead of a line.
+
+The `Rank` can be also computed as the dimension of the image resulting from the linear transformation when applying the matrix.
+If the matrix is in R^2 and non-singular, it will have rank = 2 and it will result in a projected image of dimension = 2 (i.e. spanning the whole R^2).
+
+The `Determinant` of the matrix is the `Area` of the image when mapping the unit N-dimensional vector to the new basis.
+For example:
+
+```
+Fundamental basis form in R^2 is the square with coordinates (1,0), (0,1), (1,1), (0,0).
+If we apply the matrix [(3,1),(1,2)] which has Determinat = 5 we get a parallelogram with Area = 5 with the following vertices.
+
+(0,0) --> (0,0)
+(1,0) --> (3,1)
+(0,1) --> (1,2)
+(1,1) --> (4,3)
+```
+
+If the matrix for the linear transformation is singular it will have Det = 0 and also the area of the resulting image will be 0 (i.e. a line in R^2).
+
+If the determinant is negative we can say the area is negative if we take the component vectors in counter-clockwise order and the relation between the determinant and the area holds.
+
+Also `det(AB) = det(A) * det(B)`, the determinant of the product matrix is equal to the determinant of the first matrix multiplied by the determinant of the second matrix. With this we can always tell that the product matrix, if at least one of the operand matrices is singular, will be singular.
+
+The deteterminant of the Inverse Matrix of `A` is equal to `1 / det(A)`.
+Since 0 has no inverse (division by 0 is undefined), a singular matrix has no Inverse Matrix as we've seen previously.
+
+![Determinant of Inverse Matrix](./img/determinant-of-inverse-matrix.png)
+
+It follows that `det(I) = 1`, the determinant of the Identity Matrix is always 1 (only diagonal to multiply which has only 1s).
+
+In Machine Learning a way to get more data is transforming (augmenting) the data that we already have by applying linear transformations, such as rotation and shear (doing matrix multiplications).
+
+<hr/>
+
+### Bases, Eigenvalues, Eigenvectors
+
+<hr/>
+
+A basis is formed by N-vectors originating from the origin in R^N that can span R^N.
+For example, in R^2 a set of vectors with the same direction is not a basis.
+A basis can be also defined by a `minimal spanning set`. For example, 3 vectors in R^2, even if the spane the whole plane, are not a basis because we need exactly 2 vectors in this case (linearly independent, i.e. not spanning only a line or a point).
+
+The number of elements in the basis is the dimension N in R^N.
+
+A linear transformation can also be seen as a change of bases.
+
+```
+A set B of vectors in a vector space V is called a basis (pl.: bases) if every element of V may be written in a unique way as a finite linear combination of elements of B. The coefficients of this linear combination are referred to as components or coordinates of the vector with respect to B. The elements of a basis are called basis vectors.
+
+Equivalently, a set B is a basis if its elements are linearly independent and every element of V is a linear combination of elements of B. In other words, a basis is a linearly independent spanning set (i.e. set of all linear combinations of the vectors in S).
+```
+
+![Span](./img/span-1.png)
+
+![Span](./img/span-2.png)
+
+![Span](./img/span-3.png)
+
+`Eigenbases` are particularly useful in PCA (Principal Component Analysis).
+An eigenbasis is a basis where every vector is an eigenvector.
+
+The set of all eigenvectors of T corresponding to the same eigenvalue, together with the zero vector, is called an eigenspace, or the characteristic space of T associated with that eigenvalue. If a set of eigenvectors of T forms a basis of the domain of T, then this basis is called an eigenbasis. An eigenbasis is a basis of R^N consisting of eigenvectors of A. Eigenvectors and Linear Independence. Eigenvectors with different eigenvalues are automatically linearly independent. If an n × n matrix A has n distinct eigenvalues then it has an eigenbasis.
+
+For example, the "stretching" factors are called an eigenvalues (3 and 2) and the two vectors in this basis are the eigenvectors.
+
+![Eigenbasis](./img/eigenbasis.png)
+
+To find `eigenvalues` we want to find the matrix to subtract to our linear trasformation matrix in order to have a singular transformation (i.e. the determinant of the resulting difference matrix is 0)
+
+If lambda is an eigenvalue in the following example, then the transformations by applying the matrix and the transformation by scaling the plane by a factor of lambda are equal for infinitely many vectors (x,y).
+
+![Eigenvalues](./img/eigenvalues.png)
+
+The roots (i.e. where the characteristic polynomial is 0) are the eigenvalues.
+
+To find the corresponding eigenvectors we solve the linear system of equations with the eigenvalues (which will yield infinitely many solutions for (x,y) because the eigenvector is one vector that form a basis that span the space R^N).
+
+(1,0) is the eigenvector corresponding to the eigenvalue 2 and (1,1) is the eigenvector corresponding to the eigenvalue 3.
+
+![Eigenvectors](./img/eigenvectors.png)
+
+https://metric.ma.ic.ac.uk/metric_public/matrices/eigenvalues_and_eigenvectors/eigenvalues2.html

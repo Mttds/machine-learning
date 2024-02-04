@@ -202,9 +202,7 @@ _Python_:
 
 - content_based_filtering.py: implementation of a movie recommender using content-based filtering
 
-#### <span style="color:teal;font-weight:bold"> Principal Component Analysis (PCA)</span>
-
-<hr/>
+### Principal Component Analysis (PCA)
 
 Suppose we have a collection of m points {x(1), . . . , x(m)} in R^n
 
