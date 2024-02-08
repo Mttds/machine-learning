@@ -311,4 +311,20 @@ To find the corresponding eigenvectors we solve the linear system of equations w
 
 ![Eigenvectors](./img/eigenvectors.png)
 
+The relation between the matrix and its eigenvalues and eigenvectors is as follows.
+
+The eigenvectors are the only spaces that get mapped to themselves which are also called the eigenspaces (i.e. the red and blue lines in this example)
+
+![Eigenvectors](./img/eigenvectors-2.png)
+
+![Eigenvectors](./img/eigenvectors-3.png)
+
+In the case of a shear transformation we have only 1 eigenvector and a generalized eigenvector and their relation is as follows.
+
+![Eigenvectors](./img/eigenvector-generalized.png)
+
+An application of eigenvectors is in Principal Component Analysis in Machine Learning (PCA).
+
+![PCA](./img/pca.png)
+
 https://metric.ma.ic.ac.uk/metric_public/matrices/eigenvalues_and_eigenvectors/eigenvalues2.html
