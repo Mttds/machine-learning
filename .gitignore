@@ -1,3 +1,6 @@
 __pycache__
 .ipynb_checkpoints
 *.so
+derivatives.pdf
+grad.pdf
+grad-newton-opt.pdf

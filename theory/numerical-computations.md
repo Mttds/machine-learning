@@ -34,7 +34,7 @@
 
 2. Mean Absolute Loss (MAE)
 
-3. Log Loss:
+3. Log Loss [mainly for classification problems]:
 
 - finding the maximum of a f(x) is the same as finding maximum of log(f(x)).
 - taking the log makes the differentiation easier because we can split the composition of functions in sums rather than having to take the derivative of products (harder than sums to differentiate).
@@ -53,3 +53,11 @@
 ![Gradient Descent MSE](./img/gd-3.png)
 
 ![Gradient Descent MSE](./img/gd-4.png)
+
+6. Newton's method: `x[k+1] = x[k] - g'(x[k]) / g''(x[k])`
+
+With more than one variable we have the gradient for the first derivative of g(x,..., xn) and the hessian for the second derivative of g(x, ..., xn). The order of the matrix multiplication (Hessian times gradient) needs to be preserved.
+
+![Newton's Method](./img/newtons-1.png)
+
+7. Hessian matrix `H(x,y)`. Matrix of second derivatives (i.e. gradients with respect to f'(x,y)). Positive definite if `det(H(x,y) - lambda * Identity Matrix) has positive eigenvalues, negative definite viceversa. (i.e. find eigenvalues of the Hessian with the characteristic polynomial). If eigenvalues are positive and negative we have a saddle point.`
