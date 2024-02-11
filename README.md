@@ -27,6 +27,8 @@ pip install imageio
 pip install pyvirtualdisplay # apt update && apt install xvfb needed on Linux
 pip install swig # required by box2d-py
 pip install gym[box2d]
+pip install -U nltk
+pip install regex
 ```
 
 ## Environment
@@ -241,3 +243,13 @@ _Folder_:
 _Jupyter Notebook_:
 
 - lunar_lander.html: lunar lander agent environment using Deep Q-Learning.
+
+### Naive Bayes
+
+_Folder_:
+
+- naive-bayes
+
+_Jupyter Notebook_:
+
+- naive-bayes.ipynb: naive bayes impl example
