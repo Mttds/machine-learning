@@ -53,7 +53,7 @@ If a matrix in echelon form satisfies the following additional conditions, then 
 4. The leading entry in each nonzero row is 1.
 5. Each leading 1 is the only nonzero entry in its column.
 
-![Reduce Row-Echelon Form](./img/reduce-row-echelon-form.png)
+![Reduced Row-Echelon Form](./img/reduce-row-echelon-form.png)
 
 Row echelon form (diagonal can be 1s or 0s)
 

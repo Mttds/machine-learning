@@ -1,6 +1,11 @@
 __pycache__
 .ipynb_checkpoints
 *.so
+stats1.pdf
+stats2.pdf
+stats3.pdf
+stats4.pdf
 derivatives.pdf
 grad.pdf
 grad-newton-opt.pdf
+math-for-ml-book.pdf
